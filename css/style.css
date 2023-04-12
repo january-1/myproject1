@@ -1,0 +1,1519 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/css?family=Orbitron);
+@import url(http://fonts.googleapis.com/css?family=Righteous);
+
+/* 초기화 */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: #333;
+}
+ul,ol,li{
+    list-style: none;
+    
+}
+a{
+    text-decoration: none;
+    display: block;
+}
+
+#modal{
+    width: 100%;
+    height: calc(100vh - 300px);
+    background-color: rgba(0,0,0,0.2);
+    z-index: 12;
+    position: relative;
+    margin-top: -250px;
+}
+/* visual */
+figure{
+    width: 100%;
+    /* height: calc(100vh - 120px); */
+    height: calc(100vh - 300px);
+
+    background: #fff;
+    position: relative;
+    overflow: hidden;
+    padding-top: 250px;
+    margin-top: 50px;
+    /* border-top: 3px solid rgb(193, 230, 242); */
+    /* border-bottom: 3px solid rgb(193, 230, 242); */
+}
+
+
+
+/* header */
+header{
+    width: 100%;
+    /* border-bottom: 1px dashed rgb(193, 230, 242); */
+}
+header .inner{
+    width: 1180px;
+    height: 120px;
+    margin: 0px auto;
+    position: relative;
+}
+header .inner h1{
+    position: absolute;
+    left: 0px;
+    bottom: 15px;
+} 
+ header .inner h1 img{
+    width: 200px;
+    height: 100px;
+    left: 0px;
+    position: relative;
+    top: 10px;
+} 
+header .inner h1 a{
+    font: bold 24px/1 ;
+    color: #444;
+} 
+header .inner .util{
+    position: absolute;
+    top: 10px;
+    right: -10px;
+}
+header .inner .util li{
+    float: left;
+}
+header .inner .util li a{
+    display: block;
+    font: 20px/1 "righteous";
+    color: #999;
+    padding: 10px 10px;
+    transition: all 0.5s;
+}
+header .inner .util li a:hover{
+    background: lightblue;
+    color: #fff;
+}
+
+.menu{
+   position: absolute;
+    bottom: 0px;
+    right: -10px;
+    border: 5px dashed rgb(193, 230, 242);
+}
+.navi>li{
+    float: left;
+}
+.navi>li>a{
+    text-align: center;
+    width: 180px;
+    height: 50px;
+    line-height: 50px;
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 20px 40px;
+    display: block;
+    font: bold 20px/1 "righteous";
+}
+
+.navi>li>a:hover{
+    background-color: rgb(193, 230, 242);
+    color: #fff;
+}
+.submenu{
+    text-align: center;
+    display: none;
+    position: absolute;
+    z-index: 50;
+}
+.submenu>li>a{
+    text-align: center;
+    width: 180px;
+    height: 50px;
+    line-height: 50px;
+    background-color: rgb(193, 230, 242);
+    color: #fff;
+    padding: 20px;
+    display: block;
+    font: bold 18px "righteous";
+}
+.submenu>li>a:hover{
+    background-color: lightpink;
+    color: #333;
+}
+
+/* header .inner #gnb{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+header .inner #gnb li{
+    float: left;
+}
+header .inner #gnb li a{
+    display: block;
+    font: bold 15px/1 "arial";
+    color: #555;
+    padding: 20px 40px;
+    transition: all 0.5s;
+}
+header .inner #gnb li a:hover{
+    background: lightskyblue;
+    color: #fff;
+} */
+
+
+
+
+.v1{
+    opacity: 0.9;
+    width: 100%;
+    height: calc(100vh - 800px);
+    margin-top: -40px;
+    object-fit: fill;
+    transition: all 1s;
+}
+/* .v1:hover{
+    transform: scale(1.3);
+} */
+
+.y1{
+    opacity: 0.9;
+    width: 100%;
+    height: calc(100vh - 830px);
+    margin-top: -250px;
+    background-color: papayawhip;
+    position: absolute;
+}
+
+
+/* .a1 img{
+    opacity: 0.6;
+    width: 100%;
+    height: calc(100vh - 750px);
+    margin-top: -40px;
+} */
+
+.a2 img{
+    opacity: 0.6;
+    width: 100%;
+    height: calc(100vh - 750px);
+    margin-top: -40px;
+}
+.a3 img{
+    opacity: 0.6;
+    width: 100%;
+    height: calc(100vh - 750px);
+    margin-top: -40px;
+}
+.b1 img{
+    opacity: 0.5;
+}
+
+.zz1 img{
+    opacity: 0.6;
+  width: 100%;
+    height: calc(100vh - 750px);
+    margin-top: -40px;
+}
+
+
+.b2 img{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    float: left;
+    margin-left: 600px;
+    margin-top: 260px;
+
+    transition: all 1s;
+}
+
+.b2 img:hover{
+    transform: scale(1.1);
+} 
+
+
+/* a3.html 역대 꽁꽁축제 */
+.aaa1 img{
+    width: 300px;
+    height: 400px;
+    position: absolute;
+    float: left;
+    margin-left: 300px;
+    margin-top: 300px;
+    transition: all 1s;
+}
+.aaa2 img{
+    width: 300px;
+    height: 400px;
+    position: absolute;
+    float: left;
+    margin-left: 650px;
+    margin-top: 300px;
+    transition: all 1s;
+}
+.aaa3 img{
+    width: 300px;
+    height: 400px;
+    position: absolute;
+    float: left;
+    margin-left: 1000px;
+    margin-top: 300px;
+    transition: all 1s;
+}
+.aaa4 img{
+    width: 300px;
+    height: 400px;
+    position: absolute;
+    float: left;
+    margin-left: 1350px;
+    margin-top: 300px;
+    transition: all 1s;
+}
+
+.aaaa1{
+    position: absolute;
+    color: #333;
+    font: bold 20px "righteous";
+    text-align: center;
+    float: left;
+    margin-left: 380px;
+    margin-top: 20px;
+}
+.aaaa2{
+    position: absolute;
+    color: #333;
+    font: bold 20px "righteous";
+    text-align: center;
+    float: left;
+    margin-left: 730px;
+    margin-top: 20px;
+}
+.aaaa3{
+    position: absolute;
+    color: #333;
+    font: bold 20px "righteous";
+    text-align: center;
+    float: left;
+    margin-left: 1080px;
+    margin-top: 20px;
+}
+.aaaa4{
+    position: absolute;
+    color: #333;
+    font: bold 20px "righteous";
+    text-align: center;
+    float: left;
+    margin-left: 1420px;
+    margin-top: 20px;
+}
+
+.aaa1 img:hover{
+    transform: scaleY(1.3);
+}
+.aaa2 img:hover{
+    transform: scaleY(1.3);
+}
+.aaa3 img:hover{
+    transform: scaleY(1.3);
+}
+.aaa4 img:hover{
+    transform: scaleY(1.3);
+}
+
+
+/* b2.html 체험프로그램 */
+.bb1 img{
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    float: left;
+    margin-left: 600px;
+    margin-top: 250px;
+}
+.bb2 img{
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    float: left;
+    margin-left: 850px;
+    margin-top: 250px;
+}
+.bb3 img{
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    float: left;
+    margin-left: 1100px;
+    margin-top: 250px;
+}
+.bb4 img{
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    float: left;
+    margin-left: 600px;
+    margin-top: 450px;
+}
+.bb5 img{
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    float: left;
+    margin-left: 850px;
+    margin-top: 450px;
+}
+.bb6 img{
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    float: left;
+    margin-left: 1100px;
+    margin-top: 450px;
+}
+.bb1 img:hover{
+    opacity: 0.5;
+    transition: all 1s;
+}
+.bb2 img:hover{
+    opacity: 0.5;
+    transition: all 1s;
+}
+.bb3 img:hover{
+    opacity: 0.5;
+    transition: all 1s;
+}
+.bb4 img:hover{
+    opacity: 0.5;
+    transition: all 1s;
+}
+.bb5 img:hover{
+    opacity: 0.5;
+    transition: all 1s;
+}
+.bb6 img:hover{
+    opacity: 0.5;
+    transition: all 1s;
+}
+.bb11{
+    position: absolute;
+    color: #333;
+    font: bold 20px "righteous";
+    text-align: center;
+    float: left;
+    margin-left: 640px;
+    margin-top: -30px;
+}
+.bb22{
+    position: absolute;
+    color: #333;
+    font: bold 20px "righteous";
+    text-align: center;
+    float: left;
+    margin-left: 890px;
+    margin-top: -30px;
+}
+.bb33{
+    position: absolute;
+    color: #333;
+    font: bold 20px "righteous";
+    text-align: center;
+    float: left;
+    margin-left: 1125px;
+    margin-top: -30px;
+}
+.bb44{
+    position: absolute;
+    color: #333;
+    font: bold 20px "righteous";
+    text-align: center;
+    float: left;
+    margin-left: 620px;
+    margin-top: 380px;
+}
+.bb55{
+    position: absolute;
+    color: #333;
+    font: bold 20px "righteous";
+    text-align: center;
+    float: left;
+    margin-left: 890px;
+    margin-top: 380px;
+}
+.bb66{
+    position: absolute;
+    color: #333;
+    font: bold 20px "righteous";
+    text-align: center;
+    float: left;
+    margin-left: 1135px;
+    margin-top: 380px;
+}
+
+/* b1.html 메인프로그램 */
+.bb221 img{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    float: left;
+    margin-left: 400px;
+    margin-top: 300px;
+}
+.bb222 img{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    float: left;
+    margin-left: 800px;
+    margin-top: 300px;
+}
+.bb223 img{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    float: left;
+    margin-left: 1200px;
+    margin-top: 300px;
+}
+.bb111{
+    position: absolute;
+    color: #333;
+    font: bold 20px "righteous";
+    text-align: center;
+    float: left;
+    margin-left: 475px;
+    margin-top: 360px;
+}
+.bb2222{
+    position: absolute;
+    color: #333;
+    font: bold 20px "righteous";
+    text-align: center;
+    float: left;
+    margin-left: 900px;
+    margin-top: 360px;
+}
+.bb333{
+    position: absolute;
+    color: #333;
+    font: bold 20px "righteous";
+    text-align: center;
+    float: left;
+    margin-left: 1290px;
+    margin-top: 360px;
+}
+.bb221 img:hover{
+    opacity: 0.5;
+    transition: all 1s;
+}
+.bb222 img:hover{
+    opacity: 0.5;
+    transition: all 1s;
+}
+.bb223 img:hover{
+    opacity: 0.5;
+    transition: all 1s;
+}
+
+
+/* d1.html 홍천 관광 */
+.d1 img{
+    width: 280px;
+    height: 280px;
+    position: absolute;
+    float: left;
+    margin-left: 330px;
+    margin-top: 275px;
+    transition: all 1s;
+}
+.d2 img{
+    width: 280px;
+    height: 280px;
+    position: absolute;
+    float: left;
+    margin-left: 680px;
+    margin-top: 275px;
+    transition: all 1s;
+}
+.d3 img{
+    width: 280px;
+    height: 280px;
+    position: absolute;
+    float: left;
+    margin-left: 1020px;
+    margin-top: 275px;
+    transition: all 1s;
+}
+.d4 img{
+    width: 280px;
+    height: 280px;
+    position: absolute;
+    float: left;
+    margin-left: 1360px;
+    margin-top: 275px;
+    transition: all 1s;
+}
+.dd1{
+    position: absolute;
+    color: #333;
+    font: bold 20px "righteous";
+    text-align: center;
+    float: left;
+    margin-left: 420px;
+    margin-top: 320px;
+}
+.dd2{
+    position: absolute;
+    color: #333;
+    font: bold 20px "righteous";
+    text-align: center;
+    float: left;
+    margin-left: 780px;
+    margin-top: 320px;
+}
+.dd3{
+    position: absolute;
+    color: #333;
+    font: bold 20px "righteous";
+    text-align: center;
+    float: left;
+    margin-left: 1130px;
+    margin-top: 320px;
+}
+.dd4{
+    position: absolute;
+    color: #333;
+    font: bold 20px "righteous";
+    text-align: center;
+    float: left;
+    margin-left: 1450px;
+    margin-top: 320px;
+}
+.d1 img:hover{
+    transform: scaleX(1.3);
+}
+.d2 img:hover{
+    transform: scaleX(1.3);
+}
+.d3 img:hover{
+    transform: scaleX(1.3);
+}
+.d4 img:hover{
+    transform: scaleX(1.3);
+}
+
+
+/* d2.html 특산물 */
+.ddd1 img{
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    float: left;
+    margin-left: 500px;
+    margin-top: 250px;
+}
+.ddd2 img{
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    float: left;
+    margin-left: 850px;
+    margin-top: 250px;
+}
+.ddd3 img{
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    float: left;
+    margin-left: 1200px;
+    margin-top: 250px;
+}
+.ddd4 img{
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    float: left;
+    margin-left: 675px;
+    margin-top: 450px;
+}
+.ddd5 img{
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    float: left;
+    margin-left: 1025px;
+    margin-top: 450px;
+}
+.dddd1{
+    position: absolute;
+    color: #333;
+    font: bold 20px "righteous";
+    text-align: center;
+    float: left;
+    margin-left: 580px;
+    margin-top: 190px;
+}
+.dddd2{
+    position: absolute;
+    color: #333;
+    font: bold 20px "righteous";
+    text-align: center;
+    float: left;
+    margin-left: 920px;
+    margin-top: 190px;
+}
+.dddd3{
+    position: absolute;
+    color: #333;
+    font: bold 20px "righteous";
+    text-align: center;
+    float: left;
+    margin-left: 1250px;
+    margin-top: 190px;
+}
+.dddd4{
+    position: absolute;
+    color: #333;
+    font: bold 20px "righteous";
+    text-align: center;
+    float: left;
+    margin-left: 720px;
+    margin-top: 390px;
+}
+.dddd5{
+    position: absolute;
+    color: #333;
+    font: bold 20px "righteous";
+    text-align: center;
+    float: left;
+    margin-left: 1100px;
+    margin-top: 390px;
+}
+.ddd1 img:hover{
+    opacity: 0.5;
+    transition: all 1s;
+}
+.ddd2 img:hover{
+    opacity: 0.5;
+    transition: all 1s;
+}
+.ddd3 img:hover{
+    opacity: 0.5;
+    transition: all 1s;
+}
+.ddd4 img:hover{
+    opacity: 0.5;
+    transition: all 1s;
+}
+.ddd5 img:hover{
+    opacity: 0.5;
+    transition: all 1s;
+}
+
+/* e1.html 체험프로그램 */
+.e1 img{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    float: left;
+    margin-left: 200px;
+    margin-top: 350px;
+}
+.e2 img{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    float: left;
+    margin-left: 480px;
+    margin-top: 350px;
+}
+.e3 img{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    float: left;
+    margin-left: 750px;
+    margin-top: 350px;
+}
+.e4 img{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    float: left;
+    margin-left: 1020px;
+    margin-top: 350px;
+}
+.e5 img{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    float: left;
+    margin-left: 1300px;
+    margin-top: 350px;
+}
+.e6 img{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    float: left;
+    margin-left: 1580px;
+    margin-top: 350px;
+}
+.e1:hover{
+    opacity: 0.5;
+    transition: all 1s;
+}
+.e2:hover{
+    opacity: 0.5;
+    transition: all 1s;
+}
+.e3:hover{
+    opacity: 0.5;
+    transition: all 1s;
+}
+.e4:hover{
+    opacity: 0.5;
+    transition: all 1s;
+}
+.e5:hover{
+    opacity: 0.5;
+    transition: all 1s;
+}
+.e6:hover{
+    opacity: 0.5;
+    transition: all 1s;
+}
+.ee11{
+    position: absolute;
+    color: #333;
+    font: bold 20px "righteous";
+    text-align: center;
+    float: left;
+    margin-left: 750px;
+    margin-top: 210px;
+}
+.ee22{
+    position: absolute;
+    color: #333;
+    font: bold 20px "righteous";
+    text-align: center;
+    float: left;
+    margin-left: 1045px;
+    margin-top: 210px;
+}
+.ee33{
+    position: absolute;
+    color: #333;
+    font: bold 20px "righteous";
+    text-align: center;
+    float: left;
+    margin-left: 1330px;
+    margin-top: 210px;
+}
+.ee44{
+    position: absolute;
+    color: #333;
+    font: bold 20px "righteous";
+    text-align: center;
+    float: left;
+    margin-left: 725px;
+    margin-top: 475px;
+}
+.ee55{
+    position: absolute;
+    color: #333;
+    font: bold 20px "righteous";
+    text-align: center;
+    float: left;
+    margin-left: 1045px;
+    margin-top: 475px;
+}
+.ee66{
+    position: absolute;
+    color: #333;
+    font: bold 20px "righteous";
+    text-align: center;
+    float: left;
+    margin-left: 1350px;
+    margin-top: 475px;
+}
+
+
+/* c2.html  */
+.c2 img{
+    width: 650px;
+    height: 490px;
+    position: absolute;
+    float: left;
+    margin-left: 650px;
+    margin-top: 170px;
+    transition: all 2s;
+}
+.c2 img:hover{
+    transform: scale(1.1);
+    transition: all 2s;
+}
+
+/* c1.html  */
+.c11 img{
+    width: 650px;
+    height: 490px;
+    position: absolute;
+    float: left;
+    margin-left: 650px;
+    margin-top: 170px;
+    transition: all 2s;
+}
+.c11 img:hover{
+    transform: scale(1.1);
+    transition: all 2s;
+}
+.c1-1 img{
+    width: 650px;
+    height: 670px;
+    position: absolute;
+    float: left;
+    margin-left: 650px;
+    margin-top: 100px;
+    transition: all 2s;
+}
+.c1-1 img:hover{
+    transform: scale(1.1);
+    transition: all 2s;
+}
+/* c3.html  */
+.c3 img{
+    width: 650px;
+    height: 490px;
+    position: absolute;
+    float: left;
+    margin-left: 650px;
+    margin-top: 170px;
+    transition: all 2s;
+}
+.c3 img:hover{
+    transform: scale(1.1);
+    transition: all 2s;
+}
+
+/* contents */
+.contents{
+    /* width:1200px;
+    height: 200px; */
+    
+    width: 3000px;
+    height: 1000px;
+}
+.notice{
+    /* float: left;
+    width: 400px;
+    height: 200px; */
+    
+    float: left;
+    width: 1000px;
+    height: 1000px;
+}
+.tab{
+    /* float: left;
+    width: 400px; */
+
+    float: left;
+    width: 1000px;
+    padding: 0px 400px;
+    margin-top: -100px;
+}
+.notice h4{
+    /* float: left;
+    height: 50px;
+    line-height: 50px; */
+
+    float: left;
+    position: absolute;
+    width: 300px;
+    line-height: 100px;
+    font-size: 35px;
+    margin-left: -450px;
+    color: lightpink;
+    margin-top: 120px;
+}
+.notice>div{
+    /* float: left;
+    width: 380px;
+    border-bottom-color: lightblue;
+    border-bottom-style: solid;
+    margin-left: 10px; */
+    
+
+    margin-top: -150px;
+    margin-left: 550px;
+}
+.linee1{
+    border-bottom-color: lightpink;
+    border-bottom-style: solid;
+    float: left;
+    width: 950px;
+    margin-left: -450px;
+    margin-top: 200px;
+}
+.notice ul{
+    /* float: left;
+    width: 400px; */
+
+    float: left;
+    width: 1000px;
+
+    margin-left: 480px;
+    margin-top: 20px;
+
+}
+.notice li{
+    /* height: 32px;
+    line-height: 32px;
+    font-size:15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #333; */
+
+    height: 55px;
+    line-height: 55px;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #333;
+
+}
+.notice span{
+    float: right;
+    color: #333;
+}
+.notice li:nth-of-type(2n){
+    background-color: lightpink;
+}
+.notice li:hover{
+    font-weight: bold;
+}
+
+
+
+/* a1 */
+/* .a1 h2{
+    position: absolute;
+    color: skyblue;
+    font: bold 40px/1 "righteous";
+    z-index: 3;
+    text-align: center;
+    float: left;
+    margin-left: 700px;
+    margin-top: -230px;
+} */
+.a1 span{
+    color: skyblue;
+    font: bold 30px "righteous";
+    z-index: 30;
+    text-align: center;
+    float: left;
+    margin-left: 550px;
+    margin-top: -200px; 
+    position: absolute;
+}
+.line{
+    border-bottom: 3px solid skyblue;
+    width: 300px;
+    position: absolute;
+    text-align: center;
+    float: left;
+    margin-left: 980px;
+    margin-top: -170px; 
+}
+.a1 p{
+    position: absolute;
+    color: #333;
+    font: bold 20px/1 "righteous";
+    z-index: 3;
+    line-height: 45px;
+    float: left;
+    margin-left: 550px;
+    margin-top: -30px;
+}
+/* a2 */
+/* .a2 h2{
+    position: absolute;
+    color: skyblue;
+    font: bold 40px/1 "righteous";
+    z-index: 3;
+    text-align: center;
+    float: left;
+    margin-left: 700px;
+    margin-top: -230px;
+}
+.a2 span{
+ 
+    color: lightpink;
+    font: bold 25px/1 "righteous";
+    z-index: 3;
+    text-align: center;
+    float: left;
+    margin-left: 650px;
+    margin-top: 30px; 
+} */
+.line2{
+    border-bottom: 3px solid skyblue;
+    width: 300px;
+    position: absolute;
+    text-align: center;
+    float: left;
+    margin-left: 770px;
+    margin-top: -170px; 
+}
+/* .a2 p{
+    position: absolute;
+    color: #333;
+    font: bold 20px/1 "righteous";
+    z-index: 3;
+    line-height: 50px;
+    float: left;
+    margin-left: 650px;
+    margin-top: 110px;
+} */
+
+
+
+/* a3 */
+.a3 h2{
+    position: absolute;
+    color: skyblue;
+    font: bold 40px/1 "righteous";
+    z-index: 3;
+    text-align: center;
+    float: left;
+    margin-left: 800px;
+    margin-top: -200px;
+}
+.a3 span{
+    /* position: absolute; */
+    color: lightpink;
+    font: bold 25px/1 "righteous";
+    z-index: 3;
+    text-align: center;
+    float: left;
+    margin-left: 600px;
+    margin-top: -100px; 
+}
+.line3{
+    border-bottom: 3px solid lightpink;
+    width: 300px;
+    position: absolute;
+    text-align: center;
+    float: left;
+    margin-left: 850px;
+    margin-top: 50px; 
+}
+.a3 p{
+    position: absolute;
+    color: #333;
+    font: bold 20px/1 "righteous";
+    z-index: 3;
+    line-height: 50px;
+    float: left;
+    margin-left: 650px;
+    margin-top: 110px;
+}
+
+
+/* b1 */
+.b1 h2{
+    position: absolute;
+    color: skyblue;
+    font: bold 40px/1 "righteous";
+    z-index: 3;
+    text-align: center;
+    float: left;
+    margin-left: 800px;
+    margin-top: -200px;
+}
+.b1 span{
+    position: absolute;
+    color: lightpink;
+    font: bold 25px/1 "righteous";
+    z-index: 3;
+    text-align: center;
+    float: left;
+    margin-left: 600px;
+    margin-top: -50px; 
+}
+.lineb1{
+    border-bottom: 3px solid lightpink;
+    width: 300px;
+    position: absolute;
+    text-align: center;
+    float: left;
+    margin-left: 780px;
+    margin-top: -30px; 
+}
+.b1 p{
+    position: absolute;
+    color: #333;
+    font: bold 20px/1 "righteous";
+    z-index: 3;
+    line-height: 50px;
+    float: left;
+    margin-left: 600px;
+    margin-top: -100;
+}
+
+/* b2 */
+.b2 h2{
+    position: absolute;
+    color: skyblue;
+    font: bold 40px/1 "righteous";
+    z-index: 3;
+    text-align: center;
+    float: left;
+    margin-left: 800px;
+    margin-top: -200px;
+}
+.b2 span{
+    /* position: absolute; */
+    color: lightpink;
+    font: bold 25px/1 "righteous";
+    z-index: 3;
+    text-align: center;
+    float: left;
+    margin-left: 650px;
+    margin-top: 30px; 
+}
+.lineb2{
+    border-bottom: 3px solid lightpink;
+    width: 300px;
+    position: absolute;
+    text-align: center;
+    float: left;
+    margin-left: 850px;
+    margin-top: 49px; 
+}
+.b2 p{
+    position: absolute;
+    color: #333;
+    font: bold 20px/1 "righteous";
+    z-index: 3;
+    line-height: 50px;
+    float: left;
+    margin-left: 600px;
+    margin-top: -100;
+}
+
+
+.lined1{
+    border-bottom: 3px solid lightpink;
+    width: 300px;
+    position: absolute;
+    text-align: center;
+    float: left;
+    margin-left: 710px;
+    margin-top: -40px; 
+}
+
+/* e2.html 포토존 */
+.linee2{
+    border-bottom: 3px solid lightpink;
+    width: 300px;
+    position: absolute;
+    text-align: center;
+    float: left;
+    margin-left: 710px;
+    margin-top: -40px; 
+}
+.line11{
+    border-bottom: 3px solid skyblue;
+    width: 300px;
+    position: absolute;
+    text-align: center;
+    float: left;
+    margin-left: 685px;
+    margin-top: -170px; 
+}
+
+
+/* figure video{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+} */
+
+figure video{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+ figure img{
+    width: 2500px;
+    height: 870px;
+    position: absolute;
+    top: 0px;
+}
+
+
+
+
+/* 배경이미지 */
+.figure1{
+    width: 2500px;
+    height: 955px;
+    top: 0px;
+    position: absolute;
+    background-size: cover;
+    background-position: right center;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+.figure1:nth-of-type(1):nth-of-type(1){
+    /* background: linear-gradient(to top,lightblue,white); */
+     background: linear-gradient(to left,lightblue,white);
+}
+ /* 첫번째 박스 이미지 */
+.p11{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+.p12{
+    position: absolute;
+    bottom: -40px;
+    right: 130px;
+}
+.p13{
+    position: absolute;
+    top: 180px;
+    right: 60px;
+}
+
+h3 img{
+    width: 150px;
+    height: auto;
+    animation:ani 1.5s infinite alternate;
+    float: left;
+    margin-left: -50px;
+   position: relative;
+   margin-top: 30px;
+}
+
+@keyframes ani{
+    0%{
+        transform: scale(1);
+        opacity: 1;
+        
+    }
+    100%{
+        transform: scale(1.4);
+        opacity: 0.8;
+        
+    }
+}
+
+
+figure .inner{
+    width: 1180px;
+    margin: 0px auto;
+    position: relative;
+    z-index: 30;
+}
+figure .inner h1{
+    font: normal 50px/1 'righteous';
+    /* color: rgb(85, 176, 233); */
+    /* color: skyblue; */
+    /* color: lightpink; */
+    /* margin-bottom: 20px;
+    margin-top: -200px; */
+
+    color: #fff;
+    z-index: 15;
+    /* color: lightblue; */
+    margin-top: -600px;
+    position: absolute;
+    margin-bottom: 50px;
+}
+figure .inner p{
+    font: 20px/1.4 'righteous';
+    color: skyblue;
+    margin-bottom: 60px;
+} 
+figure .inner a{
+    display: block;
+    /* width: 400px; */
+    /* height: 30px; */
+    /* font: bold 11px/30px 'righteous'; */
+    text-align: center;
+    letter-spacing: 1px;
+    transition: all 0.5s;
+
+    height: 70px;
+    width: 700px;
+    font: bold 35px 'righteous';
+    line-height: 70px;
+    border: 5px dashed skyblue;
+    /* border: 5px dashed #fff; */
+    color: #000;
+    margin-top: -500px;
+    z-index: 20;
+}
+figure .inner a:hover{
+    /* background: lightpink; */
+    /* color: #333; */
+    color: #fff;
+    background-color: skyblue;
+}
+
+.f3{
+    background-color: #fff;
+}
+
+/* news */
+section{
+    width: 100%;
+    padding: 200px 0px;
+}
+section .inner{
+    width: 1180px;
+    margin: 0px auto;
+}
+section .inner h1{
+    font: bold 24px/1 'righteous';
+    color: skyblue;
+    text-align: center;
+    margin-bottom: 50px;
+}
+section .inner h2 {
+    text-align: center;
+}
+section .inner p{
+    text-align: center;
+}
+section .inner .wrap{
+    width: 100%;
+}
+/* float 속성 해제 */
+section .inner .wrap::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+section .inner .wrap article{
+    width: 280px;
+    float: left;
+    margin-right: 20px;
+}
+section .inner .wrap article:last-child{
+    margin-right: 0px;
+}
+section .inner .wrap article h2{
+    margin-bottom: 10px;
+}
+
+section .inner .wrap article h2 a{
+    font: bold 16px/1 "righteous";
+    /* color: #555; */
+    color: lightpink;
+}
+
+section .inner .wrap article p{
+    font: 14px/1.4 'righteous';
+    /* color: #777; */
+    color: lightblue;
+}
+section .inner .wrap article .pic{
+    width: 100%;
+    height: 120px;
+    background: #fff;
+    margin-bottom: 15px;
+    /* position: relative;
+    overflow: hidden; */
+}
+section .inner .wrap article .pic img{
+    object-fit: cover;
+    width: 100%;
+    /* height: 100%; */
+    height: 130px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+section .inner .wrap article .pic img:hover{
+    opacity: 0.5;
+}
+
+/* footer */
+footer{
+    width: 100%;
+    /* background: lightcyan; */
+    background-color: rgb(228, 243, 247);
+    padding: 100px 0px;
+    /* border-top: 3px solid  rgb(193, 230, 242); */
+    border-top: 3px solid #fff;
+}
+footer .inner{
+    width: 1180px;
+    margin: 0px auto;
+}
+footer .inner .upper h1 img{
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+footer .inner .upper{
+    width: 100%;
+    border-bottom: 1px solid lightblue;
+    padding-bottom: 20px;
+}
+footer .inner .upper::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+/* footer .inner .upper h1 a{
+    float: left;
+    font: bold 24px/1 "arial";
+    color: #fff;
+} */
+footer .inner .upper ul{
+    float: right;
+}
+footer .inner .upper ul li{
+    float: left;
+    margin-left: 20px;
+}
+footer .inner .upper ul li a{
+    font: bold 14px/1 "arial";
+    color: grey;
+}
+footer .inner .lower{
+    width: 100%;
+    padding-top: 20px;
+}
+footer .inner .lower address{
+    width: 100%;
+    font: 12px/1.3 "arial";
+    color: #777;
+    margin-bottom: 20px;
+}
+footer .inner .lower p{
+    width: 100%;
+    font: 12px/1 "arial";
+    color: #777;
+}
+
+footer .inner .lower select{
+    width: 150px;
+    height: 30px;
+    float: right;
+    margin-top: -70px;
+    margin-right: -5px;
+    text-align: center;
+} 
+
+
+
